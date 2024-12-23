@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getRequest, getSuccess, getFailed, getError } from "./noticeSlice";
 
-const REACT_APP_BASE_URL = "http://localhost:5000";
+const REACT_APP_BASE_URL = "https://school-app-mern.onrender.com";
 export const getAllNotices = (id, address) => async (dispatch) => {
   dispatch(getRequest());
 

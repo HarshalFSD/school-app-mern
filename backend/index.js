@@ -13,7 +13,12 @@ dotenv.config();
 const _dirname = path.resolve();
 
 app.use(express.json({ limit: "10mb" }));
-app.use(cors());
+
+const corsOption = {
+  origin: "https://school-app-mern.onrender.com",
+  credentials: true,
+};
+app.use(cors(corsOption));
 
 mongoose
   .connect(MONGO_URL, {
