@@ -6,7 +6,9 @@ const app = express();
 const Routes = require("./routes/route.js");
 const path = require("path");
 const PORT = 5000;
-const MONGO_URL = "mongodb://127.0.0.1/school";
+// const MONGO_URL = "mongodb://127.0.0.1/school";
+const MONGO_URL =
+  "mongodb+srv://hsurwase:Harsh123@cluster0.a30fn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 dotenv.config();
 
